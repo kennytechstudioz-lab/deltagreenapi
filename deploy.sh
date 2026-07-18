@@ -5,5 +5,5 @@ export NVM_DIR="$HOME/.nvm"
 echo "Deploying Delta API..."
 npm install
 npm run build
-pm2 restart delta-api || pm2 start dist/index.js --name "delta-api"
+pm2 restart deltagreen-api || pm2 start dist/index.js --name "deltagreen-api"
 echo "Delta API deployed successfully!"
